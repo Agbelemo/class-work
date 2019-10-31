@@ -1,8 +1,8 @@
 :root{
     --font-poppins: 'Poppins', sans-serif;
     --font-family: 'Racing Sans One', cursive;
-    --font-motserrat: 'Montserrat', sans-serif;
-}
+    --font-motserrat: 'Montserrat', sans-serif;}
+
 
 *{
     margin: 0;
@@ -10,16 +10,21 @@
     
 }
 
+                /* HEADER */
+
 header nav{
     display: grid;
     grid-template-columns: 30% 70%;
     margin-left: 6em;
+    margin-top: 2%;
 }
 
 header nav .navImg{
     width: 20vw;
     height: 5vw;
     background: url("./asset/Group\ 5.png");
+    background-repeat: no-repeat;
+    display: inline-block;
 }
 
 header nav ul{
@@ -28,19 +33,25 @@ header nav ul{
     list-style-type: none;
 }
 
+                    /* SHOWCASE */
+
 .showcase{
     display: grid;
     grid-template-columns: repeat(2,50%);
     margin-top: 1em;
     margin-left: 5em;
+    
 }
 
 .showcaseImg{
     width: 30vw;
     height: 25vw;
+    transform: scale(1.5);
     background: url("/asset/Group\ 3.png");
     background-position: center;
     background-size: contain;
+    width: 720px;
+    background-repeat: no-repeat;
 }
 
 .img2{
@@ -49,16 +60,28 @@ header nav ul{
     background: url("./asset/Group\ 4.png");
     background-position: center;
     background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 5%;
+    top: 10%;
 }
 
 .showcaseText{
-    margin-top: 110px;
+    display: inline-block;
+    margin-top: 100px;
+    transform: scale(2.0);
     font-family: var(--font-family);
+    position: relative;
+    left: 25%;
+    background-repeat: no-repeat;
+    max-width: 40%;
+    
 }
 
 .showcaseText h1{
     margin-left: 40px;
     font-size: 80px;
+    
 }
 
 .showcaseText p{
@@ -66,6 +89,8 @@ header nav ul{
     font-size: 20px;
     color: #636363;
 }
+
+                    /*QUALITY  */
 
 .qualityBox{
     display: grid;
@@ -77,18 +102,25 @@ header nav ul{
 
 .qualityText{
     margin: 1em;
+    line-height: 5vh;
 }
 
 .quality{
-    margin-left: 10em;
-    margin-top: 30px;
+    margin-left: 23em;
+    margin-top: 300px;
     font-family: var(--font-motserrat);
     font-size: 25px;
+    font-weight: bolder;
 }
 
 .qualityText h2{
     margin-left: 20px;
+    margin-bottom: 1em;
 }
+.qualityText h1{
+    margin-top: 1em;
+}
+
 
 .qualityText:nth-child(1) .qualityImg{
     width: 5vw;
@@ -115,4 +147,178 @@ header nav ul{
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+                    /* BIOGRAPHY */
+
+.Biography{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin-top: 10%;
+    width: 50%;
+    
+}
+
+.BiographyImage{
+    height: 200px;
+    width: 200px;
+    background: url(./asset/Rectangle\ 2.png);
+    background-size: 97%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    left: 40%;
+}
+
+.BiographyText{
+    max-width: 100%;
+    position: relative;
+    left: 60%;
+    line-height: 5vh;
+}
+
+.BiographyText h1{
+    margin-bottom: 10%;
+}
+
+
+.LearnIcon{
+    background: url(./asset/Group\ 20.svg);
+    height: 10vh;
+    width: 15vw;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+                /* Subhead */
+
+#subhead{
+    font-family: var(--font-family);
+}
+
+            /* Channels */
+
+ /* .Channel{
+
+ }  */
+ 
+ .ChannelText{
+    width: 50%;
+    position: relative;
+    left: 7%;
+    line-height: 5vh;
+ }
+
+ .ChannelText h1{
+     margin-bottom: 5%;
+     
+ }
+
+ /* .ChannelImage{
+    
+ } */
+
+ .ChannelImage div:nth-child(1){
+     height: 100px;
+     width: 300px;
+     background-image: url(./asset/Group\ 33.png);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: 100%;
+     position: relative;
+     left: 7%;
+     display: inline-block; 
+ }
+
+ .ChannelImage div:nth-child(2){
+    height: 300px;
+    width: 300px;
+    background-image: url(./asset/Group\ 32.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    position: absolute;
+    left: 60%;
+    top: 250%;
+    display: inline-block; 
+}
+
+                /* Client */
+
+.ClientText{
+    width: 50%;
+    position: relative;
+    left: 7%;
+    line-height: 5vh;
+    margin-top: 10%;
+}
+
+/* .ClientText p{
+    position: absolute;
+    left: 30%;
+    top: 330%;
+} */
+
+.ClientImage{
+    height: 10vh;
+    width: 100%;
+    background-image: url(./asset/clients.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%;
+    margin-top: 5%;
+}
+                /* Community */
+
+.Community{
+    margin-top: 10%;
+    margin-left: 7%;
+    text-align: center;
+}
+
+.Community h1{
+    margin-top: 10%;
+}
+
+.Community h2{
+    display: inline;
+    font-size: 2em;
+}
+
+span{
+    color: #636363;
+    font-family: var(--font-family);
+    font-size: 4em;
+}
+
+.Community h2:nth-child(2){
+position: absolute;
+left: 10%;
+
+
+}
+
+.Community h2:nth-child(3){
+    position: absolute;
+    left: 40%;
+    
+    
+}
+
+.Community h2:nth-child(4){
+position: absolute;
+left: 70%;
+
+
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
 }
